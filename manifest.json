@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "UofT Library Subscriptions",
+  "description": "Redirects Paid Links to UofT Library Subscription.",
+  "version": "0.1",
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "storage",
+    "*://dl.acm.org/*",
+    "*://www.engineeringvillage.com/*",
+    "*://ieeexplore.ieee.org/*",
+    "*://www.scopus.com/*",
+    "*://apps.webofknowledge.com/*",
+    "*://search.proquest.com/*"
+  ],
+  "content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'",
+  "background": {"scripts": ["background.js"]}
+}
