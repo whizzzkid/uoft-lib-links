@@ -51,17 +51,15 @@ UofTLibApp.setUpListeners = function () {
 UofTLibApp.LoadGoogleAnalytics = function () {
   if (!window.ga) {
     // Load ga code.
-    (function () {
-      window.ga = function() {
-        (window.ga.q = window.ga.q || []).push(arguments);
-      }, window.ga.l = 1 * new Date();
-      var tag = 'script';
-      var a = document.createElement(tag);
-      var m = document.getElementsByTagName(tag)[0];
-      a.async = 1;
-      a.src = 'https://www.google-analytics.com/analytics.js';
-      m.parentNode.insertBefore(a, m);
-    })();
+    window.ga = function() {
+      (window.ga.q = window.ga.q || []).push(arguments);
+    }, window.ga.l = 1 * new Date();
+    var tag = 'script';
+    var a = document.createElement(tag);
+    var m = document.getElementsByTagName(tag)[0];
+    a.async = 1;
+    a.src = 'https://www.google-analytics.com/analytics.js';
+    m.parentNode.insertBefore(a, m);
     // Setup account.
     ga('create', 'UA-90932606-1', 'auto');
     // The need this for some reason.
