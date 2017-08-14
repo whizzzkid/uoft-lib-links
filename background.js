@@ -14,7 +14,8 @@ UofTLibApp.LINKS = {
   'www.engineeringvillage.com': 'www-engineeringvillage-com.myaccess.library.utoronto.ca',
   'www.scopus.com': 'www-scopus-com.myaccess.library.utoronto.ca',
   'apps.webofknowledge.com': 'apps.webofknowledge.com.myaccess.library.utoronto.ca',
-  'search.proquest.com': 'search.proquest.com.myaccess.library.utoronto.ca'
+  'search.proquest.com': 'search.proquest.com.myaccess.library.utoronto.ca',
+  'www.sciencedirect.com': 'www.sciencedirect.com.myaccess.library.utoronto.ca'
 };
 
 /**
